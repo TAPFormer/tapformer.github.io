@@ -496,79 +496,30 @@ Moreover, on standard point tracking benchmarks, our tracker consistently achiev
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Additional Experimental Analysis</h2>
+        <div class="content has-text-justified">
+          <p> 
+          <img src="static/images/framerate_compare1.png" alt="Learning from model weights" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
+          </p>
+          <p>
+            We analyzed how the input frame rate affects tracking performance for our method and CoTracker3 under slow, normal, and fast motion settings. This experiment highlights the adaptability of our transient asynchronous fusion mechanism to low-frame-rate and high-speed conditions, demonstrating its potential for real-world deployment where frame capture rates are constrained. 
+          </p>
+          <p> 
+          <img src="static/images/feature_vector_clust.png" alt="Learning from model weights" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
+          </p>
+          <p>
+            We evaluate temporal robustness and discriminability by comparing point features from frame-only, event-only, and fused models. Features sampled along ground-truth trajectories are projected to 2D via PCA. The fused model produces tighter clusters for the same point and clearer separation between different points over time, demonstrating superior temporal coherence and embedding quality compared to single-modality methods.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
 
 
 <!--BibTex citation -->
