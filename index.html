@@ -413,8 +413,39 @@ Moreover, on standard point tracking benchmarks, our tracker consistently achiev
         </p>
         <br>
         <p>
-        TAPFormer overview. (a) The overall framework: frames and events are fused by the transient asynchronous fusion mechanism and Cross-Modal Local Weighted Fusion modules to produce high-frequency transient features, refined by temporal attention and decoded into multi-scale fusion features. The resulting features, together with the initial query points position ( <b>q</b> ), are fed into a transformer-based optimization module to iteratively predict tracking trajectories ( <b>x</b> ) and occlusion states ( v ). M denotes the number of iterations. (b) The fusion network: image and event tokens are integrated by local weighted cross-attention to construct and update transient representations.
+        TAPFormer overview. (a) The overall framework: frames and events are fused by the transient asynchronous fusion mechanism and Cross-Modal Local Weighted Fusion modules to produce high-frequency transient features, refined by temporal attention and decoded into multi-scale fusion features. The resulting features, together with the initial query points position <b>q</b>, are fed into a transformer-based optimization module to iteratively predict tracking trajectories <b>x</b> and occlusion states v. M denotes the number of iterations. (b) The fusion network: image and event tokens are integrated by local weighted cross-attention to construct and update transient representations.
         </p>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+
+<!-- overall image-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <div class="content has-text-justified">
+        <p>
+<img src="static/images/tap_result.png" alt="Learning from model weights" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
+        </p>
+        <!-- <br> -->
+        <p>
+        <b>Quantitative comparison with various modality-based methods on the TAP task.</b>
+        </p>
+        <p> 
+        <img src="static/images/feature_track_result.png" alt="Learning from model weights" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
+        </p>
+        <p>
+        <b>Quantitative comparison with various modality-based methods on the feature tracking task.</b>
+        </p>
+        <p>
+          We evaluate our approach on two challenging real-world TAP datasets collected by ourselves, InivTAP and DrivTAP. InivTAP covers complex and representative challenging scenarios, while DrivTAP includes real driving sequences captured in both daytime and nighttime conditions. In addition, we further validate our method on the widely used feature point tracking datasets EDS and EC, demonstrating its effectiveness and strong generalization capability in real-world scenarios.
+
+        </p>
+          
       </div>
     </div>
   </section>
